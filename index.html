@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap Portfolio</title>
+
+  <!-- Custom Fonts -->
+  <script src="https://kit.fontawesome.com/28729d06ff.js" crossorigin="anonymous"></script>
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -12,20 +16,20 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
+<!-- Body -->
+
 <body>
 
   <!-- Nav -->
-<nav class="navbar navbar-expand-lg Navbody">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <h1 class="logo">Thomas Jack // Web Developer</h1>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="#">Thomas Jack // Web Developer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#about">About</a>
           </li>
@@ -35,46 +39,111 @@
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
-
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true"></a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- Nav End -->
 
-
- <!-- <nav class="nav">
-    <h1 class="logo">Thomas Jack // Web Developer</h1>
-    <a class="nav-link active justify-content-end" aria-current="page" href="#">About</a>
-    <a class="nav-link" href="#">Work</a>
-    <a class="nav-link" href="#">Contact</a> -->
-
-
-  <!--Hero Section -->
-  <header class="masthead">
-    <div class="container">
-      <div class="row col">
-        <img class="heroImage" src="./assets/pixel-background.jpg" alt="Pixel background graphic with blues, purples and pinks">
-      </div>
+  <!-- Jumbotron Code (Hero)-->
+  <div class="p-5 mb-4 bg-body-tertiary heroImage">
+    <div class="container-fluid py-6 jumboCopy">
+      <h1 class="display-6 fw-bold heroTitle">#</h1>
     </div>
-  </header>
-<!-- Hero Section End -->
+  </div>
 
-<!-- About Section -->
-  <section class="about">
+
+  <!-- About Section -->
+  <section id="about">
     <div class="container text-center">
       <div class="row">
-        <div class="col">
-          About Me
-        </div>
+        <h2 class="sectionHeading">About Me</h2>
         <div class="col">
           <img class="aboutPhoto" src="./assets/round pic ot.png" alt="">
-          <p>Hi i'm Thomas. I'm currently studying front-end web development. I'm loving it! It's fast paced, there's a lot to know and comprehend but i've always wanted to do this. I have had a successful career in Logistics and Operation and am currently the Head of Logistics for a large brewery group in the UK. It's an incredibly tough and fast-paced industry, so I hope this will prepare me well for an industry in tech. (and this course).</p>
+          <p>Hi i'm Thomas. I'm currently studying front-end web development. I'm loving it! It's fast paced, there's a
+            lot to know and comprehend but i've always wanted to do this. I have had a successful career in Logistics
+            and Operation and am currently the Head of Logistics for a large brewery group in the UK. It's an incredibly
+            tough and fast-paced industry, so I hope this will prepare me well for an industry in tech. (and this
+            course).</p>
         </div>
       </div>
     </div>
-
   </section>
+  <!-- End About Section -->
+
+  <!-- main -->
+  <main>
+
+    <!-- Work Section -->
+    <section class="work" id="sectionHeading">
+      <h2 class="text-center my-5">My Work</h2>
+
+      <!-- Card Container/colums/rows -->
+      <div class="container" id="work">
+        <div class="row gy-4">
+
+          <!-- Card 1 -->
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card h-100 text-center">
+              <img src="./assets/horeison-img.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Getting underway</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Click Here</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card h-100 text-center">
+              <img src="./assets/horeison-img.png"  class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Horeison Code Refactor</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Click Here</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card h-100 text-center">
+              <img src=".//assets/work2_coding img.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Portfolio Project</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Click Here</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card h-100 text-center">
+              <img src="./assets/work3_pinapple.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Diary of a Dev..</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Click Here</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card End -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section></section>
+
 
 
   <!-- Popper.js, then Bootstrap JS -->
@@ -87,3 +156,7 @@
 </body>
 
 </html>
+
+
+
+div
