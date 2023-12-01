@@ -1,0 +1,45 @@
+body {
+    background-color: #03030B;
+}
+.nav {
+    background-color: #03030B;
+    height: 80px;
+    align-content: center;
+    top: 0;
+    position: sticky;
+}
+
+.logo {
+    color: aqua;
+    font-size: xx-large;
+}
+
+.nav-link {
+    color: #2F4F4F;
+}
+.nav-link:hover {
+    color: aqua;
+}
+
+/* Hero Section */
+.heroImage {
+    height: 300px;
+    margin-top: 80px;
+    border: #2F4F4F 6px solid;
+    background-image: url(../assets/pixel-background.jpg);
+    background-size: cover;
+    margin-bottom: 80px;
+}
+
+/* About Section */
+.aboutPhoto {
+    height: 200px;
+}
+
+.about {
+    color: aliceblue;
+}
+
+
+
+
