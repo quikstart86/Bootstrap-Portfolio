@@ -1,78 +1,145 @@
 :root {
-    --heading-text-color: white;
+  --heading-text-color: white;
 }
 
+/* scroll behaviour */
+html {
+    scroll-behavior: smooth;
+  }
 
 body {
-    background-color: rgb(12, 26, 55);
-    margin: 0;
+  background-color: rgb(5, 15, 33);
+  margin: 0;
+
 }
-.navbar {
-    background-color: #08081e;
-    height: 80px;
-    top: 0;
-    position: sticky;
-    z-index: 10;
+.myNav {
+  background-color: #08081e;
+  height: 80px;
 }
 
-
-
-
-.navbar-brand {
-    color: aqua;
-
+.logo {
+    color: #2f9494;
+}
+.logo:hover {
+  color: aqua;
 }
 
 .nav-link {
-    color: #2F4F4F;
+  color: #2f9494;
 }
 .nav-link:hover {
-    color: aqua;
+  color: aqua;
 }
 
 /* Jumbotron-Hero Section */
 .heroImage {
-    height: 200px;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    background-image: url(../assets/pixel-background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: none;
+  height: 300px;
+  background-image: url(../assets/pixel-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.jumboText {
+    color: white;
 }
 
 /* About Section */
 .aboutPhoto {
-    height: 200px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  height: 250px;
+}
+
+.aboutPhoto:hover {
+    border: solid 5px aqua;
+    border-radius: 50%;
+
 }
 
 #about {
-    color: rgb(235, 235, 235);
-    margin-top: 80px;
+  color: rgb(235, 235, 235);
+  margin-top: 80px;
 }
 
-.container-fluid {
-    margin-top: 80px;
+.cardBackground {
+    background-color: #08081e;
+    color: #2f9494;
 }
-
 .card {
-    transition: all 0.3s;
-    cursor: pointer;
-    .card-img-top {
-        width: 100%;
-        height: 30vw;
-        object-fit: cover;
-    }
+  transition: all 0.3s;
+  cursor: pointer;
+  border: none;
+  .card-img-top {
+    width: 100%;
+    height: 30vw;
+    object-fit: cover;
+  }
 }
 
 .card:hover {
-    transform: scale(1.01);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.01);
+  box-shadow: 0 4px 8px 0 rgba(167, 167, 167, 0.452), 0 6px 20px 0 rgba(157, 157, 157, 0.532);
 }
-
 
 #sectionHeading {
-    color: var(--heading-text-color);
+  color: var(--heading-text-color);
 }
+
+.iconTitle {
+    color: #2f9494;
+}
+
+
+
+/* Footer CSS */
+footer {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 100;
+    color: var(--headings-nav-colors);
+  }
+  
+  /* font-awesome padding */
+  .fa-brands {
+    padding-left: 30px;
+  }
+  
+  /* font awesome email */
+  .fa-regular {
+    padding-left: 30px;
+  }
+  
+  .fa-regular:hover {
+    color: aqua;
+  }
+  
+  /* linkedIn hover actions */
+  .fa-linkedin-in:hover {
+    color: aqua;
+  }
+  
+  /* Github hover actions */
+  .fa-github:hover {
+    color: aqua;
+  }
+
+/* Scroll to top */
+.fa-solid {
+    padding: 10px;
+    position: relative;
+    float: right;
+    border: 2px solid;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+/* scroll to top - hover */
+.fa-solid:hover {
+    color: aqua;
+  }
+
+  
+/* Footer styling */

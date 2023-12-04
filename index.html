@@ -21,20 +21,23 @@
 <body>
 
   <!-- Nav -->
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg sticky-top myNav">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Thomas Jack // Web Developer</a>
+      <a class="navbar-brand logo" href="#">Thomas Jack // Web Developer</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#about">About</a>
+            <a class="nav-link" aria-current="page" href="#about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -49,9 +52,11 @@
   <!-- Nav End -->
 
   <!-- Jumbotron Code (Hero)-->
-  <div class="p-5 mb-4 bg-body-tertiary heroImage">
-    <div class="container-fluid py-6 jumboCopy">
-      <h1 class="display-6 fw-bold heroTitle">#</h1>
+  <div class="p-5 mb-4 heroImage">
+    <div class="container-fluid py-6 jumboCopy text-center jumboText">
+      <h1 class="display-6 fw-bold heroTitle">Hello, I'm Thomas</h1>
+      <hr>
+      <p class="fs-4">Welcome to my site - Please have a look around</p>
     </div>
   </div>
 
@@ -59,23 +64,25 @@
   <!-- About Section -->
   <section id="about">
     <div class="container text-center">
+      <img class="aboutPhoto mb-4" src="./assets/round pic ot.png" alt="">
       <div class="row">
-        <h2 class="sectionHeading">About Me</h2>
-        <div class="col">
-          <img class="aboutPhoto" src="./assets/round pic ot.png" alt="">
-          <p>Hi i'm Thomas. I'm currently studying front-end web development. I'm loving it! It's fast paced, there's a
+        <div class="col mt-4">
+          <h2 class="sectionHeading">About Me</h2>
+          <p class="fs-4">Hi i'm Thomas. I'm currently studying front-end web development. I'm loving it! It's fast
+            paced, there's a
             lot to know and comprehend but i've always wanted to do this. I have had a successful career in Logistics
             and Operation and am currently the Head of Logistics for a large brewery group in the UK. It's an incredibly
             tough and fast-paced industry, so I hope this will prepare me well for an industry in tech. (and this
             course).</p>
         </div>
+
       </div>
     </div>
   </section>
   <!-- End About Section -->
 
   <!-- main -->
-  <main>
+  <main class="mt-5 pt-5">
 
     <!-- Work Section -->
     <section class="work" id="sectionHeading">
@@ -86,79 +93,183 @@
         <div class="row gy-4">
 
           <!-- Card 1 -->
-          <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
             <div class="card h-100 text-center">
-              <img src="./assets/horeison-img.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Getting underway</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Click Here</a>
+              <img src="./assets/pre-work study guide.png" class="card-img-top" alt="...">
+              <div class="card-body cardBackground rounded-bottom">
+                <h5 class="card-title">Prework Study Guide</h5>
+                <p class="card-text">My first deployed app during the prework</p>
+                <a href="https://quikstart86.github.io/prework-study-guide/" target="_blank" class="btn btn-info">Click
+                  Here</a>
               </div>
             </div>
           </div>
 
           <!-- Card 2 -->
-          <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
             <div class="card h-100 text-center">
-              <img src="./assets/horeison-img.png"  class="card-img-top" alt="...">
-              <div class="card-body">
+              <img src="./assets/horeison-img.png" class="card-img-top" alt="...">
+              <div class="card-body cardBackground rounded-bottom">
                 <h5 class="card-title">Horeison Code Refactor</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Click Here</a>
+                <p class="card-text">Refactoring project using symantic elements</p>
+                <a href="https://quikstart86.github.io/horeison-code-refactor/" target="_blank"
+                  class="btn btn-info">Click Here</a>
               </div>
             </div>
           </div>
 
           <!-- Card 3 -->
-          <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
             <div class="card h-100 text-center">
               <img src=".//assets/work2_coding img.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
+              <div class="card-body cardBackground rounded-bottom">
                 <h5 class="card-title">Portfolio Project</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Click Here</a>
+                <p class="card-text">My first mini portfilio using Flex and Grid</p>
+                <a href="https://quikstart86.github.io/ThomasJack-portfolio/" target="_blank" class="btn btn-info">Click
+                  Here</a>
               </div>
             </div>
           </div>
 
           <!-- Card 4 -->
-          <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
             <div class="card h-100 text-center">
               <img src="./assets/work3_pinapple.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
+              <div class="card-body cardBackground rounded-bottom">
                 <h5 class="card-title">Diary of a Dev..</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Click Here</a>
+                <p class="card-text">So how has it been doing a dev. bootcamp?</p>
+                <a href="#" target="_blank" class="btn btn-info">Click Here</a>
               </div>
             </div>
           </div>
           <!-- Card End -->
+
         </div>
       </div>
-      
     </section>
-
   </main>
 
+  <!-- skills section -->
+  <section id="skills" class="p-5">
+    <div class="container">
+      <!-- title -->
+      <div class="row iconTitle">
+        <div class="col-12 mb-3 text-center">
+          <h1 class="my-2">Skills</h1>
+        </div>
+      </div>
+      <!-- End of title -->
+
+      <div class="row">
+        <div class="col-sm-6 col-md-4 my-3 text-center">
+          <i class="fa-brands fa-html5 fa-2x"></i>
+          <h2 class="m-1">HTML5</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3 text-center">
+          <i class="fa-brands fa-css3"></i>
+          <h2 class="m-1">CSS3</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3 text-center">
+          <i class="fa-brands fa-js"></i>
+          <h2 class="m-1">JavaScript</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3 text-center">
+          <i class="fa-brands fa-git"></i>
+          <h2 class="m-1">Git</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3 text-center">
+          <i class="fa-solid fa-terminal"></i>
+          <h2 class="m-1">Terminal</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3 text-center">
+          <i class="fa-solid fa-box"></i>
+          <h2 class="m-1">Flexbox</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3 text-center">
+          <i class="fa-solid fa-table-cells"></i>
+          <h2 class="m-1">Grid</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3 text-center">
+          <i class="fa-brands fa-bootstrap"></i>
+          <h2 class="m-1">Bootstrap</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3 text-center">
+          <i class="fa-solid fa-clipboard-question"></i>
+          <h2 class="m-1">jQuery</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3 text-center">
+          <i class="fa-solid fa-link"></i>
+          <h2 class="m-1">APIs</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3 text-center">
+          <i class="fa-brands fa-node-js"></i>
+          <h2 class="m-1">Node.js</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3 text-center">
+          <i class="fa-brands fa-npm"></i>
+          <h2 class="m-1">NPM</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3 text-center">
+          <i class="fa-solid fa-scroll"></i>
+          <h2 class="m-1">JSON</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3 text-center">
+          <i class=""></i>
+          <h2 class="m-1">ECMAScript6</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3 text-center">
+          <i class="fa-solid fa-object-ungroup"></i>
+          <h2 class="m-1">OOP</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3 text-center">
+          <i class="fa-solid fa-object-ungroup"></i>
+          <h2 class="m-1">React.js</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3 text-center">
+          <i class="fa-solid fa-timeline"></i>
+          <h2 class="m-1">Web Hooks</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3 text-center">
+          <i class="fa-brands fa-figma"></i>
+          <h2 class="m-1">Figma</h2>
+        </div>
+        <div class="col-sm-6 col-md-4 my-3 text-center">
+          <i class="fa-brands fa-gitlab"></i>
+          <h2 class="m-1">GitLab</h2>
+        </div>
+      </div>
+      <!-- End of skills list -->
+
+
+      <section class="contact" id="">
+        <div class="container">
+          <h2 class="text-center my-5">Contact Me</h2>
+        </div>
+
+      </section>
+
+      <!-- Scroll to top -->
+      <a href="#top"><i class="fa-solid fa-angle-up"></i></a>
+
+      <!-- Footer -->
+      <footer>
+        <h3> &copy; Thomas Jack 2023. All rights reserved </h3>
+        <a href="https://www.linkedin.com/in/thomastjack" target="_blank"><i
+            class="fa-brands fa-linkedin-in fa-2xl"></i></a>
+        <a href="https://github.com/quikstart86" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+        <a href="mailto:thomastjack@gmail.com" target="_blank"><i class="fa-regular fa-envelope fa-2xl"></i></a>
+
+      </footer>
 
 
 
-
-  <!-- Popper.js, then Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+      <!-- Popper.js, then Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
-
-
-
-div
