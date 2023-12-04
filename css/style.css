@@ -4,16 +4,16 @@
 
 
 body {
-    background-color: #f4efef;
+    background-color: rgb(12, 26, 55);
     margin: 0;
 }
-/* .navbar {
+.navbar {
     background-color: #08081e;
     height: 80px;
     top: 0;
     position: sticky;
     z-index: 10;
-} */
+}
 
 
 
