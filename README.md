@@ -47,25 +47,18 @@ Original code created by Thomas Jack
 
 **Support and mentoring from course mentors:**
 <br>Bobbi Tarkanay (1:1 - mentoring) - https://github.com/bltarkany
-<br>Katharine Redford (1:1 - mentoring)
-<br>Sandra Smith (1:1 - mentoring)
 
 **Peer Study Group Support:**
-<br>
-Billy Rowden 
-<br>
-Andrea Dos Santos 
-<br>
-Sarah Egleston
+N/A
 
 **Supporting links:**
-[MDN](https://developer.mozilla.org/en-US/)
+[Bootstrap5](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
+[Fontawesome](https://fontawesome.com/icons)
+[w3schools](https://www.w3schools.com/bootstrap5/)
+[MDBootstrap](https://mdbootstrap.com/docs/standard/components/cards/)
 [Whocanuse](https://www.whocanuse.com/?bg=2f4f4f&fg=ffffff&fs=16&fw=)
-[Lottie Files](https://lottiefiles.com/blog/working-with-lottie/how-to-add-lottie-animation-in-web-page-html)
-[Hubspot](https://blog.hubspot.com/website/html-text-box)
-[Freecodecamp](https://www.freecodecamp.org/news/learn-css-grid-by-building-5-layouts/)
-[Stackoverflow](https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link)
-[W3schools](https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2)
+
+
 
 ## [License](#license)
 
