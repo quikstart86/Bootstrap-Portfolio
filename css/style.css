@@ -1,69 +1,105 @@
 :root {
   --heading-text-color: white;
+  --body-text-color: #36c9c9;
+  --heading-font: "Lora", sans-serif;
+  --Navlink-font: "Montserrat" sans-serif;
 }
 
 /* scroll behaviour */
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
+/* body styling */
 body {
   background-color: rgb(5, 15, 33);
   margin: 0;
-
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* Nav bg and height */
 .myNav {
   background-color: #08081e;
   height: 80px;
 }
 
-.logo {
-    color: #2f9494;
+/* logo text */
+.logoTitle {
+  color: #35b1b1;
+  font-size: 40px;
+  font-family: var(--heading-font);
+  font-weight: 700;
 }
-.logo:hover {
+
+/* logo hover */
+.logoTitle:hover {
   color: aqua;
 }
 
+/* nav links styling */
 .nav-link {
-  color: #2f9494;
+  color: var(--body-text-color);
+  font-family: var(--Navlink-font);
 }
+
+/* hover on nav */
 .nav-link:hover {
   color: aqua;
+  transition: all 0.5s ease 0s;
+  color: aqua;
+  border-bottom: 2px solid aqua;
+  padding-bottom: 5px;
 }
 
 /* Jumbotron-Hero Section */
-.heroImage {
-  height: 300px;
-  background-image: url(../assets/pixel-background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+.jumboHero {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 80px);
+  background-image: url(../assets/hero-graphic2.jpg);
+  background-position: cover;
   border: none;
+  color: white;
 }
 
-.jumboText {
-    color: white;
+/* scroll down font awesome to about section */
+.fa-3x {
+  position: absolute;
+  justify-content: center;
+  bottom: 0;
+  margin-bottom: 20px;
 }
 
-/* About Section */
+/*  FA hover styling*/
+.fa-3x:hover {
+  color: aqua;
+}
+
+/* About Section photo */
 .aboutPhoto {
   height: 250px;
 }
 
+/* Profile photo hover */
 .aboutPhoto:hover {
-    border: solid 5px aqua;
-    border-radius: 50%;
-
+  border: solid 5px aqua;
+  border-radius: 50%;
 }
 
+/* About section */
 #about {
-  color: rgb(235, 235, 235);
+  color: var(--body-text-color);
   margin-top: 80px;
 }
 
+/* cards styling */
 .cardBackground {
-    background-color: #08081e;
-    color: #2f9494;
+  background-color: #08081e;
+  color: #34bcbc;
 }
+
+/* card fitting and image placement */
 .card {
   transition: all 0.3s;
   cursor: pointer;
@@ -75,71 +111,101 @@ body {
   }
 }
 
+/* Card hover state and border shadow */
 .card:hover {
   transform: scale(1.01);
-  box-shadow: 0 4px 8px 0 rgba(167, 167, 167, 0.452), 0 6px 20px 0 rgba(157, 157, 157, 0.532);
+  box-shadow: 0 4px 8px 0 rgba(167, 167, 167, 0.452),
+    0 6px 20px 0 rgba(157, 157, 157, 0.532);
 }
 
-#sectionHeading {
+/* Heading styling */
+.sectionHeading {
   color: var(--heading-text-color);
+  font-family: var(--heading-font);
+  margin-top: 30px;
 }
 
-.iconTitle {
-    color: #2f9494;
+/* skills marging spacing */
+#skills {
+  margin-top: 150px;
 }
 
+/* contact section */
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/* Contact heading margin */
+.headingContact {
+  margin-right: 30px;
+}
+
+/* Contact hover */
+.contactBtn:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+/* Font awesome color */
+.fa-brands,
+.fa-solid,
+.fs-4 {
+  color: #24a3a3;
+}
+
+/* Font awesome icon hover */
+.row i:hover {
+  color: aqua;
+}
+
+/* Scroll to top */
+.scrollUp {
+  color: var(--body-text-color);
+  padding: 15px;
+  position: relative;
+  float: right;
+  border: 2px solid;
+  border-radius: 50%;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+/* scroll hover */
+.scrollUp:hover {
+  color: aqua;
+}
 
 /* Footer CSS */
 footer {
-    display: flex;
-    height: 80px;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--font-family);
-    font-size: 14px;
-    font-weight: 100;
-    color: var(--headings-nav-colors);
-  }
-  
-  /* font-awesome padding */
-  .fa-brands {
-    padding-left: 30px;
-  }
-  
-  /* font awesome email */
-  .fa-regular {
-    padding-left: 30px;
-  }
-  
-  .fa-regular:hover {
-    color: aqua;
-  }
-  
-  /* linkedIn hover actions */
-  .fa-linkedin-in:hover {
-    color: aqua;
-  }
-  
-  /* Github hover actions */
-  .fa-github:hover {
-    color: aqua;
-  }
+  display: flex;
+  width: 100vw;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 100;
+  background-color: #08081e;
+  color: var(--body-text-color);
+}
 
-/* Scroll to top */
-.fa-solid {
-    padding: 10px;
-    position: relative;
-    float: right;
-    border: 2px solid;
-    border-radius: 50%;
-    margin-right: 20px;
-  }
+/* footer text  */
+.footerText {
+  font-size: 22px;
+}
 
-/* scroll to top - hover */
-.fa-solid:hover {
-    color: aqua;
-  }
+/* font awesome footer links */
+.fa-linkedin-in,
+#github,
+.fa-envelope {
+  color: #2f9494;
+  margin-left: 30px;
+}
 
-  
-/* Footer styling */
+/* font awesome footer links hover */
+.fa-linkedin-in:hover,
+#github:hover,
+.fa-envelope:hover {
+  color: aqua;
+}

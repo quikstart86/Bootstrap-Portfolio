@@ -3,27 +3,42 @@
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./assets/round pic ot.png">
   <title>Bootstrap Portfolio</title>
 
-  <!-- Custom Fonts -->
-  <script src="https://kit.fontawesome.com/28729d06ff.js" crossorigin="anonymous"></script>
+  <!-- reset css -->
+  <link rel="stylesheet" href="./css/reset.css">
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    integrity="sha382-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Custom Fonts (font awesome)-->
+  <script src="https://kit.fontawesome.com/28729d06ff.js" crossorigin="anonymous"></script>
+
+  <!-- Custom fonts (google fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@500;700;900&display=swap"
+    rel="stylesheet">
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <!-- Body -->
-
 <body>
 
   <!-- Nav -->
+  <!-- navigation sticky at top -->
+  <!-- links scroll to each section on page -->
   <nav class="navbar navbar-expand-lg sticky-top myNav">
     <div class="container-fluid">
-      <a class="navbar-brand logo" href="#">Thomas Jack // Web Developer</a>
+      <a class="navbar-brand logoTitle" href="#">Thomas Jack</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -51,29 +66,34 @@
   </nav>
   <!-- Nav End -->
 
-  <!-- Jumbotron Code (Hero)-->
-  <div class="p-5 mb-4 heroImage">
-    <div class="container-fluid py-6 jumboCopy text-center jumboText">
-      <h1 class="display-6 fw-bold heroTitle">Hello, I'm Thomas</h1>
-      <hr>
-      <p class="fs-4">Welcome to my site - Please have a look around</p>
+
+  <!-- Jumbotron hero section -->
+  <div class="p-5 mb-4 bg-body-tertiary jumboHero">
+    <div class="container text-center jumboArea">
+      <h1 class="display-5 fw-bold my-5">Thomas Jack // Web Developer</h1>
+      <p class="text-center my-5 fs-4">Hi Welcome to my site, please browse and have a look at my work or feel free to
+        reach out and say hi!</p>
+      <a href="mailto:thomastjack@gmail.com"><button class="btn btn-info btn-lg contactBtn" type="button">Contact Me</button></a>
+      <br>
+      <a href="#about"><i class="fa-solid fa-angle-down fa-3x"></i></a>
     </div>
   </div>
+  <!-- jumbotron end -->
 
 
   <!-- About Section -->
   <section id="about">
     <div class="container text-center">
-      <img class="aboutPhoto mb-4" src="./assets/round pic ot.png" alt="">
+      <img class="aboutPhoto mb-2" src="./assets/round pic ot.png" alt="">
       <div class="row">
-        <div class="col mt-4">
+        <div class="col mt-2">
           <h2 class="sectionHeading">About Me</h2>
           <p class="fs-4">Hi i'm Thomas. I'm currently studying front-end web development. I'm loving it! It's fast
             paced, there's a
             lot to know and comprehend but i've always wanted to do this. I have had a successful career in Logistics
             and Operation and am currently the Head of Logistics for a large brewery group in the UK. It's an incredibly
-            tough and fast-paced industry, so I hope this will prepare me well for an industry in tech. (and this
-            course).</p>
+            tough and fast-paced industry, so I hope this will prepare me well for an industry in tech, and this
+            course <i class="fa-regular fa-face-grin-squint-tears"></i>.</p>
         </div>
 
       </div>
@@ -81,19 +101,18 @@
   </section>
   <!-- End About Section -->
 
-  <!-- main -->
+  <!-- main content-->
   <main class="mt-5 pt-5">
-
     <!-- Work Section -->
-    <section class="work" id="sectionHeading">
-      <h2 class="text-center my-5">My Work</h2>
+    <section class="work" id="work">
+      <h2 class="text-center my-5 sectionHeading">My Work</h2>
 
       <!-- Card Container/colums/rows -->
-      <div class="container" id="work">
-        <div class="row gy-4">
+      <div class="container">
+        <div class="row gy-2">
 
           <!-- Card 1 -->
-          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col-sfs-42 col-md-6 col-lg-2 col-xl-3">
             <div class="card h-100 text-center">
               <img src="./assets/pre-work study guide.png" class="card-img-top" alt="...">
               <div class="card-body cardBackground rounded-bottom">
@@ -106,7 +125,7 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col-sfs-42 col-md-6 col-lg-2 col-xl-3">
             <div class="card h-100 text-center">
               <img src="./assets/horeison-img.png" class="card-img-top" alt="...">
               <div class="card-body cardBackground rounded-bottom">
@@ -119,7 +138,7 @@
           </div>
 
           <!-- Card 3 -->
-          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col-sfs-42 col-md-6 col-lg-2 col-xl-3">
             <div class="card h-100 text-center">
               <img src=".//assets/work2_coding img.jpg" class="card-img-top" alt="...">
               <div class="card-body cardBackground rounded-bottom">
@@ -132,144 +151,161 @@
           </div>
 
           <!-- Card 4 -->
-          <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col-sfs-42 col-md-6 col-lg-2 col-xl-3">
             <div class="card h-100 text-center">
               <img src="./assets/work3_pinapple.jpg" class="card-img-top" alt="...">
               <div class="card-body cardBackground rounded-bottom">
                 <h5 class="card-title">Diary of a Dev..</h5>
                 <p class="card-text">So how has it been doing a dev. bootcamp?</p>
-                <a href="#" target="_blank" class="btn btn-info">Click Here</a>
+                <a href="https://pexels.com/photo/green-pineapple-fruit-with-brown-framed-sunglasses-beside-yellow-surface-1161547"
+                  target="_blank" class="btn btn-info">Click Here</a>
               </div>
             </div>
           </div>
           <!-- Card End -->
-
         </div>
       </div>
     </section>
+    <!-- Section End -->
   </main>
+  <!-- Main End -->
 
   <!-- skills section -->
-  <section id="skills" class="p-5">
-    <div class="container">
+  <section id="skills" class="">
+    <div class="container skillsContainer">
       <!-- title -->
-      <div class="row iconTitle">
+      <div class="row skillsTitle">
         <div class="col-12 mb-3 text-center">
-          <h1 class="my-2">Skills</h1>
+          <h2 class="my-2 sectionHeading">Skills</h2>
         </div>
       </div>
       <!-- End of title -->
 
+      <!-- skills rows and column -->
       <div class="row">
-        <div class="col-sm-6 col-md-4 my-3 text-center">
+        <div class="col-xs-6 col-sm-6 col-md-2 my-3 text-center">
           <i class="fa-brands fa-html5 fa-2x"></i>
-          <h2 class="m-1">HTML5</h2>
+          <h2 class="fs-4">HTML5</h2>
         </div>
-        <div class="col-sm-6 col-md-4 my-3 text-center">
-          <i class="fa-brands fa-css3"></i>
-          <h2 class="m-1">CSS3</h2>
+        <div class="col-xs-6 col-sm-6 col-md-2 my-3 text-center">
+          <i class="fa-brands fa-css3 fa-2x"></i>
+          <h2 class="fs-4">CSS3</h2>
         </div>
-        <div class="col-sm-6 col-md-4 my-3 text-center">
+        <div class="col-xs-6 col-sm-6 col-md-2 my-3 fa-2x text-center">
           <i class="fa-brands fa-js"></i>
-          <h2 class="m-1">JavaScript</h2>
+          <h2 class="fs-4">JavaScript</h2>
         </div>
-        <div class="col-sm-6 col-md-4 my-3 text-center">
+        <div class="col-xs-6 col-sm-6 col-md-2 my-3 fa-2x text-center">
           <i class="fa-brands fa-git"></i>
-          <h2 class="m-1">Git</h2>
+          <h2 class="fs-4">Git</h2>
         </div>
-        <div class="col-sm-6 col-md-4 my-3 text-center">
+        <div class="col-xs-6 col-sm-6 col-md-2 my-3 fa-2x text-center">
           <i class="fa-solid fa-terminal"></i>
-          <h2 class="m-1">Terminal</h2>
+          <h2 class="fs-4">Terminal</h2>
         </div>
-        <div class="col-sm-6 col-md-4 my-3 text-center">
+        <div class="col-xs-6 col-sm-6 col-md-2 my-3 fa-2x text-center">
           <i class="fa-solid fa-box"></i>
-          <h2 class="m-1">Flexbox</h2>
+          <h2 class="fs-4">Flexbox</h2>
         </div>
-        <div class="col-sm-6 col-md-4 my-3 text-center">
+        <div class="col-xs-6 col-sm-6 col-md-2 my-3 fa-2x text-center">
           <i class="fa-solid fa-table-cells"></i>
-          <h2 class="m-1">Grid</h2>
+          <h2 class="fs-4">Grid</h2>
         </div>
-        <div class="col-sm-6 col-md-4 my-3 text-center">
+        <div class="col-xs-6 col-sm-6 col-md-2 my-3 fa-2x text-center">
           <i class="fa-brands fa-bootstrap"></i>
-          <h2 class="m-1">Bootstrap</h2>
+          <h2 class="fs-4">Bootstrap</h2>
         </div>
-        <div class="col-sm-6 col-md-4 my-3 text-center">
+        <div class="col-xs-6 col-sm-6 col-md-2 my-3 fa-2x text-center">
           <i class="fa-solid fa-clipboard-question"></i>
-          <h2 class="m-1">jQuery</h2>
+          <h2 class="fs-4">jQuery</h2>
         </div>
-        <div class="col-sm-6 col-md-4 my-3 text-center">
+        <div class="col-xs-6 col-sm-6 col-md-2 my-3 fa-2x text-center">
           <i class="fa-solid fa-link"></i>
-          <h2 class="m-1">APIs</h2>
+          <h2 class="fs-4">APIs</h2>
         </div>
-        <div class="col-sm-6 col-md-4 my-3 text-center">
+        <div class="col-xs-6 col-sm-6 col-md-2 my-3 fa-2x text-center">
           <i class="fa-brands fa-node-js"></i>
-          <h2 class="m-1">Node.js</h2>
+          <h2 class="fs-4">Node.js</h2>
         </div>
-        <div class="col-sm-6 col-md-4 my-3 text-center">
+        <div class="col-xs-6 col-sm-6 col-md-2 my-3 fa-2x text-center">
           <i class="fa-brands fa-npm"></i>
-          <h2 class="m-1">NPM</h2>
+          <h2 class="fs-4">NPM</h2>
         </div>
-        <div class="col-sm-6 col-md-4 my-3 text-center">
+        <div class="col-xs-6 col-sm-6 col-md-2 my-3 fa-2x text-center">
           <i class="fa-solid fa-scroll"></i>
-          <h2 class="m-1">JSON</h2>
+          <h2 class="fs-4">JSON</h2>
         </div>
-        <div class="col-sm-6 col-md-4 my-3 text-center">
-          <i class=""></i>
-          <h2 class="m-1">ECMAScript6</h2>
+        <div class="col-xs-6 col-sm-6 col-md-2 my-3 fa-2x text-center">
+          <i class="fa-solid fa-code"></i>
+          <h2 class="fs-4">ECMAScript6</h2>
         </div>
-        <div class="col-sm-6 col-md-4 my-3 text-center">
+        <div class="col-xs-6 col-sm-6 col-md-2 my-3 fa-2x text-center">
           <i class="fa-solid fa-object-ungroup"></i>
-          <h2 class="m-1">OOP</h2>
+          <h2 class="fs-4">React.js</h2>
         </div>
-        <div class="col-sm-6 col-md-4 my-3 text-center">
-          <i class="fa-solid fa-object-ungroup"></i>
-          <h2 class="m-1">React.js</h2>
+        <div class="col-xs-6 col-sm-6 col-md-2 my-3 fa-2x text-center">
+          <i class="fa-brands fa-github"></i>
+          <h2 class="fs-4">GitHub</h2>
         </div>
-        <div class="col-sm-6 col-md-4 my-3 text-center">
-          <i class="fa-solid fa-timeline"></i>
-          <h2 class="m-1">Web Hooks</h2>
-        </div>
-        <div class="col-sm-6 col-md-4 my-3 text-center">
+        <div class="col-xs-6 col-sm-6 col-md-2 my-3 fa-2x text-center">
           <i class="fa-brands fa-figma"></i>
-          <h2 class="m-1">Figma</h2>
+          <h2 class="fs-4">Figma</h2>
         </div>
-        <div class="col-sm-6 col-md-4 my-3 text-center">
+        <div class="col-xs-6 col-sm-6 col-md-2 my-3 fa-2x text-center">
           <i class="fa-brands fa-gitlab"></i>
-          <h2 class="m-1">GitLab</h2>
+          <h2 class="fs-4">GitLab</h2>
         </div>
       </div>
-      <!-- End of skills list -->
-
-
-      <section class="contact" id="">
-        <div class="container">
-          <h2 class="text-center my-5">Contact Me</h2>
-        </div>
-
-      </section>
-
-      <!-- Scroll to top -->
-      <a href="#top"><i class="fa-solid fa-angle-up"></i></a>
-
-      <!-- Footer -->
-      <footer>
-        <h3> &copy; Thomas Jack 2023. All rights reserved </h3>
-        <a href="https://www.linkedin.com/in/thomastjack" target="_blank"><i
-            class="fa-brands fa-linkedin-in fa-2xl"></i></a>
-        <a href="https://github.com/quikstart86" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
-        <a href="mailto:thomastjack@gmail.com" target="_blank"><i class="fa-regular fa-envelope fa-2xl"></i></a>
-
-      </footer>
+      <div class="col text-center p-5">
+        <h3 class="sectionHeading">Website made using</h3>
+        <span class="badge text-bg-primary">HTML5</span>
+        <span class="badge text-bg-primary">CSS3</span>
+        <span class="badge text-bg-primary">Bootstrap 5</span>
+        <span class="badge text-bg-primary">Font Awesome</span>
+        <span class="badge text-bg-primary">Git</span>
+        <span class="badge text-bg-primary">GitHub</span>
+        <span class="badge text-bg-primary">Google Fonts</span>
+      </div>
+  </section>
+  <!-- End of skills list -->
 
 
 
-      <!-- Popper.js, then Bootstrap JS -->
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-        crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+  <!-- Contact Me -->
+  <section class="contact" id="contact">
+    <div class="container contactContainer">
+      <h2 class="text-center my-5 sectionHeading headingContact">Contact Me: </h2>
+      <a href="mailto:thomastjack@gmail.com"><button class="btn btn-info btn-lg contactBtn" type="button">Contact Me</button></a>
+    </div>
+  </section>
+  <!-- end contact -->
+
+  <!-- Scroll to top -->
+  <a href="#top"><i class="fa-solid fa-angle-up scrollUp"></i></a>
+  <!-- scroll to top end -->
+
+
+
+
+  <!-- Footer -->
+  <footer>
+    <h4 class="footerText"> &copy; Thomas Jack 2023. All rights reserved </h4>
+    <a href="https://www.linkedin.com/in/thomastjack" target="_blank"><i
+        class="fa-brands fa-linkedin-in fa-2xl"></i></a>
+    <a href="https://github.com/quikstart86" target="_blank"><i class="fa-brands fa-github fa-2xl" id="github"></i></a>
+    <a href="mailto:thomastjack@gmail.com" target="_blank"><i class="fa-regular fa-envelope fa-2xl"></i></a>
+  </footer>
+  <!-- footer end -->
+
+
+  <!-- Popper.js, then Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha382-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx23ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha382-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq26cDfL"
+    crossorigin="anonymous"></script>
+    <!-- end popper.js bootstrap -->
 </body>
 
 </html>
