@@ -32,11 +32,15 @@ body {
   font-weight: 700;
   margin-left: 20px;
 }
-
+/* logo visited */
+.logoTitle:visited {
+  color: var(--body-text-color);
+}
 /* logo hover */
 .logoTitle:hover {
   color: aqua;
 }
+
 
 /* nav links styling */
 .nav-link {
@@ -59,7 +63,6 @@ body {
   align-items: center;
   height: calc(100vh - 80px);
   background-image: url(../assets/hero-graphic2.jpg);
-  background-position: cover;
   border: none;
   color: white;
 }
@@ -68,6 +71,7 @@ body {
 .fa-3x {
   position: absolute;
   justify-content: center;
+  align-items: center;
   bottom: 0;
   margin-bottom: 20px;
 }
