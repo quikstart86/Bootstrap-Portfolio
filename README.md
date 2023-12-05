@@ -23,15 +23,15 @@ Here are the critical requirements necessary to develop a portfolio that satisfi
 * When viewing the section about my work then the section contains titled images of your applications
 * When images of the applications are clicked then the user is taken to that deployed application
 * When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport
-* Buttons should make use of hover effect
+* Buttons should make use of hover effect and/or drop-shadow
 
 ## [Mock-Up](#mock-up)
 
 The following animation shows the web application's appearance and functionality:
 
-![portfolio demo](./assets/images/1pagegif.gif)
+![portfolio demo](./assets/demo.gif)
 
-[Static View](./assets/images/screenshot.png)
+[Static View](./assets/bootstrap%20site%20capture.png)
 <br>
 [Deployed Application](https://quikstart86.github.io/ThomasJack-portfolio/)
 <br>
