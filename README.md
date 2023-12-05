@@ -57,6 +57,8 @@ N/A
 [w3schools](https://www.w3schools.com/bootstrap5/)
 [MDBootstrap](https://mdbootstrap.com/docs/standard/components/cards/)
 [Whocanuse](https://www.whocanuse.com/?bg=2f4f4f&fg=ffffff&fs=16&fw=)
+[Sitepoint](https://www.sitepoint.com/bootstrap-card-component-introduction/#:~:text=Controlling%20Bootstrap%20Card%20Component%20Width%20and%20Height&text=Normally%2C%20the%20height%20of%20the,h%2D200%22%3E%20)
+
 
 
 
