@@ -82,8 +82,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## [Badges](#badges)
 
-![Static Badge](https://img.shields.io/badge/HTML_30%25-blue)
-![Static Badge](https://img.shields.io/badge/CSS_70%25-Green)
+![Static Badge](https://img.shields.io/badge/Bootstrap_40%25-orange)
+![Static Badge](https://img.shields.io/badge/HTML_35%25-blue)
+![Static Badge](https://img.shields.io/badge/CSS_25%25-Green)
 
 
 
