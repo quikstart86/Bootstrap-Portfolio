@@ -33,7 +33,7 @@ The following animation shows the web application's appearance and functionality
 
 [Static View](./assets/bootstrap%20site%20capture.png)
 <br>
-[Deployed Application](https://quikstart86.github.io/ThomasJack-portfolio/)
+[Deployed Application](https://quikstart86.github.io/Bootstrap-Portfolio)
 <br>
 [GitHub project repo](https://github.com/quikstart86/Bootstrap-Portfolio)
 
